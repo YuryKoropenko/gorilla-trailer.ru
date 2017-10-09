@@ -1,0 +1,70 @@
+@import "bourbon/bourbon"
+@import "sass/_custom"
+@import "sass/elements"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "MyriadProRegular", sans-serif
+	overflow-x: hidden
+	&::before
+		content: ''
+		width: 50%
+		display: block
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		background-color: #fff
+		z-index: -1
+	&::after
+		content: ''
+		width: 50%
+		display: block
+		height: 100%
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: #fafafa
+		z-index: -1
+
+.header
+	padding-top: 56px
+	position: relative
+	&__h-logo
+		padding-top: 9px
+	&__h-catalog
+		padding-top: (48 - 24) / 2 + 9 + px
+	&__h-phone
+		padding-top: 9px
+	&__h-letters
+		float: right
+		padding-right: 28px
+	&__h-basket
+		float: right
+	&__h-nav
+		padding: 70px 40px 0
+		@extend .clearfix
+	&__h-mobphone
+		float: right
+		padding-right: 54px
+
+.content
+	padding-top: 53px
+	&__section
+		&-yellow
+			background-color: #ffea00
+			margin: 37px 0
+		&-first
+			padding-top: 56px
+			padding-bottom: 100px
+		&-second
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	&__c-caption
+		position: relative

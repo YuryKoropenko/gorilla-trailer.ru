@@ -1,0 +1,262 @@
+@import "bourbon/bourbon"
+@import "sass/_custom"
+
+.btn
+	height: 54px
+	line-height: 52px
+	border: 1px solid #ffea00
+	background-color: #ffea00
+	padding: 0 30px
+	color: #495057
+	font-family: "MyriadProBold", sans-serif
+	display: inline-block
+	border-radius: 30px
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
+	-moz-box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
+	box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
+	&:hover, &:focus, &:active
+		text-decoration: none
+		background-color: transparent
+		color: #495057
+.h-logo
+	display: inline-block
+	&__img
+		display: block
+		max-width: 100%
+
+.h-catalog
+	line-height: 24px
+	color: #333
+	font-family: "MyriadProBold", sans-serif
+	&:hover, &:focus, &:active
+		text-decoration: underline
+		color: #333
+
+.h-phone
+	padding-left: 33px
+	position: relative
+	line-height: 24px
+	&__icon
+		width: 18px
+		height: 18px
+		background-image: url(../img/icons/header-phone.png)
+		background-repeat: no-repeat
+		background-size: cover
+		display: block
+		position: absolute
+		left: 0
+		top: 4px
+	&__number
+		color: #030303
+		font-family: "MyriadProBold", sans-serif
+	&__callme
+		font-size: 14px
+		color: #329af0
+		text-decoration: underline
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #329af0
+
+.h-letters
+	height: 63px
+	width: 63px
+	border-radius: 50%
+	background-color: #fff
+	display: block
+	background-image: url(../img/icons/header-letters.png)
+	background-repeat: no-repeat
+	background-position: center center
+
+.h-mobphone
+	height: 63px
+	width: 63px
+	border-radius: 50%
+	background-color: #fff
+	display: block
+	background-image: url(../img/icons/header-mobphone.png)
+	background-repeat: no-repeat
+	background-position: center center
+
+.h-basket
+	width: 227px
+	height: 63px
+	display: block
+	background-color: #ffea00
+	border-radius: 28px
+	padding-left: 86px
+	position: relative
+	padding-top: (63 - (18 * 2)) / 2 + px
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
+	-moz-box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
+	box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
+	&:hover, &:focus, &:active
+		text-decoration: none
+	&__icon
+		background-image: url(../img/icons/header-basket.png)
+		background-repeat: no-repeat
+		background-size: cover
+		width: 25px
+		height: 31px
+		display: block
+		position: absolute
+		left: (86 - 25) / 2 + px
+		top: 50%
+		margin-top: -15.5px
+	&__quantity
+		display: block
+		line-height: 18px
+		font-size: 14px
+		color: #030303
+	&__price
+		display: block
+		line-height: 18px
+		font-size: 14px
+		color: #030303
+		&::after
+			content: 'руб.'
+
+.h-nav
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	width: 100%
+	@extend .clearfix
+	&__mobbtn
+		float: left
+		width: 48px
+		height: 39px
+		background-image: url(../img/icons/bar.png)
+		background-repeat: no-repeat
+		background-size: cover
+	&__item
+		display: block
+		&-last
+			.h-nav__link
+				background-color: #329af0
+				color: #fff
+				padding: 0 18px
+				border-radius: 16px
+				border: 1px solid #329af0
+				height: 37px
+				line-height: 35px
+				&:hover, &:focus, &:active
+					color: #329af0
+					background-color: transparent
+					text-decoration: none
+	&__link
+		color: #333
+		line-height: 37px
+		font-family: "MyriadProBold", sans-serif
+		display: block
+		&:hover, &:focus, &:active
+			text-decoration: underline
+			color: #333
+
+.c-caption
+	&-left
+		padding: 46px 0 86px
+	&-right
+		height: 100%
+		position: absolute
+		top: -37px
+		left: 36px
+		right: 0
+		bottom: -37px
+	&__title
+		font-size: 72px
+		line-height: 85px
+		font-family: "MyriadProBold", sans-serif
+		margin-bottom: 60px
+		display: block
+	&__anchor
+		line-height: 24px
+		color: #495057
+		font-family: "MyriadProBold", sans-serif
+		display: inline-block
+		border-bottom: 1px solid #c3b71d
+		margin-right: 30px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			right: -30px
+			top: 50%
+			width: 9px
+			height: 13px
+			margin-top: -6.5px
+			background-image: url(../img/icons/download-arrow.png)
+			background-repeat: no-repeat
+			background-size: cover
+		&:hover, &:focus, &:active
+			text-decoration: none
+			border-color: transparent
+			color: #495057
+	&__img
+		height: 100%
+		width: auto
+		display: block
+		height: 458px
+
+.aboutGT
+	&-left
+		position: relative
+		padding-right: 86px
+	&__title
+		font-size: 36px
+		line-height: 24px
+		color: #333
+		font-family: "MyriadProBold", sans-serif
+		display: block
+	&__description
+		display: block
+		line-height: 30px
+		color: #030303
+		a
+			display: inline
+			color: #329af0
+			text-decoration: underline
+			&:hover, &:focus, &:active
+				text-decoration: none
+				color: #329af0
+	&__img
+		display: inline-block
+		max-width: 100%
+	&__btn
+		position: absolute
+		left: 0
+		bottom: 0
+	&-right
+		padding-top: 46px
+		padding-left: 50px
+	&__item
+		padding-left: 50px
+		background-repeat: no-repeat
+		background-position: 0 0
+		margin-bottom: 48px
+	&__subtitle
+		font-size: 16px
+		color: #333
+		line-height: 24px
+		font-family: "MyriadProBold", sans-serif
+		display: block
+		padding-bottom: 10px
+	&__subdescription
+		font-size: 14px
+		display: block
+		color: #868e96
+		line-height: 24px
+
+.c-manufacture
+	&__title
+		color: #fff
+	&__description
+		color: #fff
+	&__button
+	&__line
+	&__item
+	&__quantity
+	&__subtitle

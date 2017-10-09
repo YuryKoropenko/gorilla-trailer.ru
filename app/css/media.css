@@ -1,0 +1,193 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .h-catalog {
+    font-size: 15px;
+  }
+  .h-basket {
+    width: 200px;
+  }
+  .header__h-nav {
+    font-size: 15px;
+  }
+  .header__h-nav {
+    padding: 45px 0 15px;
+  }
+  .c-caption__title {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .c-caption__img {
+    height: 439px;
+  }
+  .aboutGT-left {
+    padding-right: 0;
+  }
+  .aboutGT-right {
+    padding-left: 0;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  body::before, body::after {
+    display: none;
+  }
+  .header {
+    padding-top: 19px;
+  }
+  .h-logo {
+    width: 161px;
+  }
+  .header__h-letters,
+  .h-basket__quantity,
+  .h-basket__price {
+    display: none;
+  }
+  .header__h-logo {
+    padding-top: 17px;
+  }
+  .h-basket {
+    width: 63px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .h-basket__icon {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__h-nav {
+    position: relative;
+    padding-top: 35px;
+  }
+  .h-nav {
+    display: block;
+    background-color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    width: auto;
+    padding: 10px 0;
+    top: 100%;
+    display: none;
+  }
+  .h-nav__item {
+    text-align: center;
+    padding: 4px 0;
+  }
+  .h-nav__link {
+    display: inline-block;
+  }
+  .h-catalog {
+    display: block;
+    float: left;
+    line-height: 39px;
+    margin-left: 42px;
+  }
+  .c-caption-right {
+    position: static;
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .c-caption__img {
+    height: auto;
+    width: 100%;
+  }
+  .c-caption__title {
+    font-size: 60px;
+    line-height: 85px;
+  }
+  .c-caption-left {
+    padding: 58px 0;
+  }
+  .c-caption__title {
+    margin-bottom: 32px;
+  }
+  .content__section-yellow {
+    margin: 0;
+  }
+  .content {
+    padding-top: 30px;
+  }
+  .content__section-first {
+    padding-top: 100px;
+    padding-bottom: 22px;
+  }
+  .aboutGT-left {
+    margin-bottom: 75px;
+  }
+  .aboutGT-right {
+    padding-top: 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .header__h-mobphone {
+    padding-right: 15px;
+  }
+  .h-mobphone {
+    width: 40px;
+  }
+  .h-nav__link {
+    line-height: 24px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  .c-caption__title {
+    font-size: 47px;
+    line-height: 68px;
+  }
+  .content__section-first {
+    padding-top: 30px;
+  }
+  .content__section-first {
+    padding-bottom: 0;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+}
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .header__h-mobphone {
+    display: none;
+  }
+  .h-nav__mobbtn {
+    display: none;
+  }
+  .h-catalog-mob {
+    display: none;
+  }
+  /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/
+}

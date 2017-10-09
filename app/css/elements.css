@@ -1,0 +1,375 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button, button:active, button:focus,
+input, input:active, input:focus {
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.clearfix:after, .h-nav:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.clearfix:before, .h-nav:before {
+  content: '';
+  display: table;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  height: 54px;
+  line-height: 52px;
+  border: 1px solid #ffea00;
+  background-color: #ffea00;
+  padding: 0 30px;
+  color: #495057;
+  font-family: "MyriadProBold", sans-serif;
+  display: inline-block;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 234, 0, 0.7);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(255, 234, 0, 0.7);
+  box-shadow: 0px 0px 20px 0px rgba(255, 234, 0, 0.7);
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  text-decoration: none;
+  background-color: transparent;
+  color: #495057;
+}
+
+.h-logo {
+  display: inline-block;
+}
+
+.h-logo__img {
+  display: block;
+  max-width: 100%;
+}
+
+.h-catalog {
+  line-height: 24px;
+  color: #333;
+  font-family: "MyriadProBold", sans-serif;
+}
+
+.h-catalog:hover, .h-catalog:focus, .h-catalog:active {
+  text-decoration: underline;
+  color: #333;
+}
+
+.h-phone {
+  padding-left: 33px;
+  position: relative;
+  line-height: 24px;
+}
+
+.h-phone__icon {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/icons/header-phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.h-phone__number {
+  color: #030303;
+  font-family: "MyriadProBold", sans-serif;
+}
+
+.h-phone__callme {
+  font-size: 14px;
+  color: #329af0;
+  text-decoration: underline;
+}
+
+.h-phone__callme:hover, .h-phone__callme:focus, .h-phone__callme:active {
+  text-decoration: none;
+  color: #329af0;
+}
+
+.h-letters {
+  height: 63px;
+  width: 63px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  background-image: url(../img/icons/header-letters.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.h-mobphone {
+  height: 63px;
+  width: 63px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  background-image: url(../img/icons/header-mobphone.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.h-basket {
+  width: 227px;
+  height: 63px;
+  display: block;
+  background-color: #ffea00;
+  border-radius: 28px;
+  padding-left: 86px;
+  position: relative;
+  padding-top: 13.5px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 234, 0, 0.7);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(255, 234, 0, 0.7);
+  box-shadow: 0px 0px 20px 0px rgba(255, 234, 0, 0.7);
+}
+
+.h-basket:hover, .h-basket:focus, .h-basket:active {
+  text-decoration: none;
+}
+
+.h-basket__icon {
+  background-image: url(../img/icons/header-basket.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 31px;
+  display: block;
+  position: absolute;
+  left: 30.5px;
+  top: 50%;
+  margin-top: -15.5px;
+}
+
+.h-basket__quantity {
+  display: block;
+  line-height: 18px;
+  font-size: 14px;
+  color: #030303;
+}
+
+.h-basket__price {
+  display: block;
+  line-height: 18px;
+  font-size: 14px;
+  color: #030303;
+}
+
+.h-basket__price::after {
+  content: 'руб.';
+}
+
+.h-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  width: 100%;
+}
+
+.h-nav__mobbtn {
+  float: left;
+  width: 48px;
+  height: 39px;
+  background-image: url(../img/icons/bar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h-nav__item {
+  display: block;
+}
+
+.h-nav__item-last .h-nav__link {
+  background-color: #329af0;
+  color: #fff;
+  padding: 0 18px;
+  border-radius: 16px;
+  border: 1px solid #329af0;
+  height: 37px;
+  line-height: 35px;
+}
+
+.h-nav__item-last .h-nav__link:hover, .h-nav__item-last .h-nav__link:focus, .h-nav__item-last .h-nav__link:active {
+  color: #329af0;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.h-nav__link {
+  color: #333;
+  line-height: 37px;
+  font-family: "MyriadProBold", sans-serif;
+  display: block;
+}
+
+.h-nav__link:hover, .h-nav__link:focus, .h-nav__link:active {
+  text-decoration: underline;
+  color: #333;
+}
+
+.c-caption-left {
+  padding: 46px 0 86px;
+}
+
+.c-caption-right {
+  height: 100%;
+  position: absolute;
+  top: -37px;
+  left: 36px;
+  right: 0;
+  bottom: -37px;
+}
+
+.c-caption__title {
+  font-size: 72px;
+  line-height: 85px;
+  font-family: "MyriadProBold", sans-serif;
+  margin-bottom: 60px;
+  display: block;
+}
+
+.c-caption__anchor {
+  line-height: 24px;
+  color: #495057;
+  font-family: "MyriadProBold", sans-serif;
+  display: inline-block;
+  border-bottom: 1px solid #c3b71d;
+  margin-right: 30px;
+  position: relative;
+}
+
+.c-caption__anchor::after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  width: 9px;
+  height: 13px;
+  margin-top: -6.5px;
+  background-image: url(../img/icons/download-arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-caption__anchor:hover, .c-caption__anchor:focus, .c-caption__anchor:active {
+  text-decoration: none;
+  border-color: transparent;
+  color: #495057;
+}
+
+.c-caption__img {
+  height: 100%;
+  width: auto;
+  display: block;
+  height: 458px;
+}
+
+.aboutGT-left {
+  position: relative;
+  padding-right: 86px;
+}
+
+.aboutGT__title {
+  font-size: 36px;
+  line-height: 24px;
+  color: #333;
+  font-family: "MyriadProBold", sans-serif;
+  display: block;
+}
+
+.aboutGT__description {
+  display: block;
+  line-height: 30px;
+  color: #030303;
+}
+
+.aboutGT__description a {
+  display: inline;
+  color: #329af0;
+  text-decoration: underline;
+}
+
+.aboutGT__description a:hover, .aboutGT__description a:focus, .aboutGT__description a:active {
+  text-decoration: none;
+  color: #329af0;
+}
+
+.aboutGT__img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.aboutGT__btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.aboutGT-right {
+  padding-top: 46px;
+  padding-left: 50px;
+}
+
+.aboutGT__item {
+  padding-left: 50px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-bottom: 48px;
+}
+
+.aboutGT__subtitle {
+  font-size: 16px;
+  color: #333;
+  line-height: 24px;
+  font-family: "MyriadProBold", sans-serif;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.aboutGT__subdescription {
+  font-size: 14px;
+  display: block;
+  color: #868e96;
+  line-height: 24px;
+}
+
+.c-manufacture__title {
+  color: #fff;
+}
+
+.c-manufacture__description {
+  color: #fff;
+}
