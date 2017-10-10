@@ -9,6 +9,7 @@ body
 	line-height: 1.25
 	font-family: "MyriadProRegular", sans-serif
 	overflow-x: hidden
+	color: #030303
 	&::before
 		content: ''
 		width: 50%
@@ -66,5 +67,34 @@ body
 			background-repeat: no-repeat
 			background-position: center center
 			background-size: cover
+			padding: 100px 0 244px
+			position: relative
+		&-third
+			padding: 100px 0
+		&-fourth
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			position: relative
+			padding: 100px 0
+			&::after
+				content: ''
+				width: 50%
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				background-color: #030303
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				width: 50%
+				bottom: 100%
+				right: 0
+				background-color: #030303
+				height: 296px
+		&-fifth
+			padding: 100px 0
 	&__c-caption
 		position: relative

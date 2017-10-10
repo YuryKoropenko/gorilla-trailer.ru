@@ -26,6 +26,18 @@
   .aboutGT-right {
     padding-left: 0;
   }
+  .c-manufacture__quantity {
+    font-size: 56px;
+  }
+  .c-why-right {
+    padding-left: 0;
+  }
+  .c-why-left {
+    padding-right: 0;
+  }
+  .aboutGT__title::after {
+    display: none;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -123,6 +135,57 @@
   .aboutGT-right {
     padding-top: 0;
   }
+  .c-manufacture__line {
+    display: none;
+  }
+  .content__section-second {
+    padding-bottom: 100px;
+  }
+  .c-manufacture__button {
+    margin-top: 60px;
+  }
+  .c-why-right {
+    padding-top: 40px;
+  }
+  .c-dealers__patent {
+    position: static;
+    background-color: #030303;
+  }
+  .content__section-fourth {
+    padding-top: 0;
+  }
+  .content__section-fourth::before, .content__section-fourth::after {
+    display: none;
+  }
+  .c-dealers-left {
+    padding-top: 90px;
+  }
+  .c-dealers-right {
+    padding-bottom: 90px;
+    background-color: #030303;
+    position: relative;
+    padding-top: 0;
+  }
+  .c-dealers-right::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    left: -900px;
+    right: -900px;
+    background-color: #030303;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+  }
+  .c-dealers__title::after {
+    left: -15px;
+    display: block;
+  }
+  .c-dealers__wrapper {
+    height: 240px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -146,9 +209,25 @@
   }
   .content__section-first {
     padding-top: 30px;
-  }
-  .content__section-first {
     padding-bottom: 0;
+  }
+  .content__section-second {
+    padding: 30px 0;
+  }
+  .content__section-third {
+    padding: 30px 0;
+  }
+  .c-dealers-left {
+    padding-top: 30px;
+  }
+  .c-dealers-right {
+    padding-bottom: 30px;
+  }
+  .content__section-fourth {
+    padding-bottom: 30px;
+  }
+  .c-dealers__video iframe {
+    height: 190px;
   }
 }
 

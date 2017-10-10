@@ -207,7 +207,7 @@
 		padding-right: 86px
 	&__title
 		font-size: 36px
-		line-height: 24px
+		line-height: 48px
 		color: #333
 		font-family: "MyriadProBold", sans-serif
 		display: block
@@ -256,7 +256,233 @@
 	&__description
 		color: #fff
 	&__button
+		margin-top: 92px
 	&__line
+		background-color: #030303
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		height: 144px
+		padding-top: (144 - 64) / 2 + px
+		.col-md-3
+			text-align: center
 	&__item
+		@extend .clearfix
+		display: inline-block
 	&__quantity
+		font-family: "MyriadProBold", sans-serif
+		color: #fff
+		font-size: 60px
+		line-height: 60px
+		float: left
 	&__subtitle
+		color: #fff
+		font-size: 14px
+		line-height: 24px
+		float: left
+		padding-left: 10px
+		padding-top: 9px
+		text-align: left
+
+.c-why
+	&-right
+		padding-left: 65px
+	&-left
+		padding-right: 52px
+	&__list
+	&__item
+		padding-left: 26px
+		position: relative
+		padding-bottom: 20px
+	&__num
+		color: #329af0
+		font-size: 25px
+		line-height: 25px
+		font-family: "MyriadProBold", sans-serif
+		display: block
+		position: absolute
+		left: 0
+		top: 22px
+	&__subtitle
+		color: #030303
+		font-family: "MyriadProBold", sans-serif
+		font-size: 14px
+		line-height: 24px
+		display: block
+	&__subdescription
+		color: #868e96
+		font-size: 14px
+		line-height: 24px
+	&__button
+		margin-top: 20px
+	&__img
+		display: block
+		width: 100%
+		height: auto
+		margin-bottom: 24px
+	&__description
+
+.c-dealers
+	&-left
+	&-right
+		z-index: 2
+		position: relative
+	&__video
+		border: 7px solid #ffea00
+		iframe
+			display: block
+			width: 100%
+			height: 300px
+	&__title
+		position: relative
+		padding-bottom: 26px
+		&::after
+			content: ''
+			display: block
+			width: 117px
+			height: 1px
+			background-color: #329af0
+			position: absolute
+			bottom: 0
+			left: -28px
+	&__description
+		color: #fff
+	&__patent
+		position: absolute
+		bottom: 100%
+		right: 0
+		left: 0
+	&__wrapper
+		text-align: center
+		width: 100%
+		display: block
+		background-color: #030303
+		height: 296px
+		position: relative
+	&__info
+		color: #fff
+		font-size: 24px
+		line-height: 36px
+		font-family: "MyriadProBold", sans-serif
+		display: inline-block
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+
+.c-trailers
+	&__slider
+		.owl-nav
+			position: absolute
+			top: -52px
+			right: 65px
+			width: 90px
+			height: 22px
+		.owl-prev
+			width: 30px
+			height: 22px
+			text-indent: -9999px
+			display: block
+			background-image: url(../img/icons/slider-left.png)
+			background-repeat: no-repeat
+			background-position: left center
+			float: left
+			&:hover
+				background-position: right center
+		.owl-next
+			width: 30px
+			height: 22px
+			text-indent: -9999px
+			display: block
+			background-image: url(../img/icons/slider-right.png)
+			background-repeat: no-repeat
+			background-position: left center
+			float: right
+			&:hover
+				background-position: right center
+	&__item
+		padding-right: 65px
+	&__subtitle
+		color: #333
+		font-family: "MyriadProBold", sans-serif
+		font-size: 24px
+		line-height: 32px
+		display: inline-block
+		border-bottom: 1px solid #acacac
+		margin: 8px 30px 8px 0
+		&:hover, &:focus, &:active
+			border-color: transparent
+			color: #333
+	&__mark
+		display: inline-block
+		color: #329af0
+		font-size: 14px
+	&__description
+		font-size: 14px
+		line-height: 24px
+		color: #868e96
+		display: block
+		padding-top: 10px
+		padding-bottom: 10px
+		height: 120px
+		overflow: hidden
+	&__photo
+		height: 250px
+		width: 100%
+		position: relative
+	&__img
+		max-height: 100%
+		max-width: 100%
+		height: auto !important
+		width: auto !important
+		display: block
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+	&__price
+		font-size: 16px
+		line-height: 24px
+		color: #030303
+		font-family: "MyriadProBold", sans-serif
+		padding: 20px 0 20px 77px
+		&::after
+			content: 'р.'
+	&__bottom
+		@extend .clearfix
+		padding: 0 20px // временно
+	&__button
+		padding-left: 60px
+		background-image: url(../img/icons/basket.png)
+		background-repeat: no-repeat
+		background-position: 24px center
+		float: left
+	&__info
+		float: right
+		margin: 12px 30px 12px 0
+		line-height: 30px
+		display: block
+		color: #495057
+		font-family: "MyriadProBold", sans-serif
+		border-bottom: 1px solid #c3c5c8
+		position: relative
+		&::after
+			content: ''
+			background-image: url(../img/icons/right-arrow.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			width: 13px
+			height: 9px
+			display: block
+			position: absolute
+			top: 50%
+			margin-top: -4.5px
+			right: -30px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			border-color: transparent
+			color: #495057
