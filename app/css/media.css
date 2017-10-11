@@ -38,6 +38,32 @@
   .aboutGT__title::after {
     display: none;
   }
+  .c-trailers__item {
+    padding-right: 0;
+  }
+  .c-photos {
+    padding-left: 0;
+  }
+  .c-trailers__slider .owl-nav {
+    right: 25px;
+  }
+  .c-unique-left {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .c-unique-right {
+    padding-left: 0;
+  }
+  .c-contacts-left {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  .footer__h-nav {
+    padding: 45px 0;
+  }
+  .c-contacts__linetitle::after {
+    display: block;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -186,6 +212,37 @@
   .c-dealers__wrapper {
     height: 240px;
   }
+  .c-photos {
+    margin-top: 86px;
+  }
+  .content__section-fifth {
+    padding: 80px 0;
+  }
+  .c-services__item {
+    margin-bottom: 80px;
+  }
+  .content__section-sixth {
+    padding-bottom: 20px;
+  }
+  .content__section-seventh {
+    padding-top: 52px;
+    padding-bottom: 180px;
+  }
+  .c-unique-left {
+    padding-bottom: 40px;
+  }
+  .c-contacts-left {
+    width: 100%;
+  }
+  .c-contacts-right {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 80px;
+  }
+  .footer__h-nav {
+    display: none;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -198,6 +255,34 @@
   }
   .h-nav__link {
     line-height: 24px;
+  }
+  .c-trailers__bottom {
+    text-align: center;
+    height: auto;
+  }
+  .c-trailers__button {
+    float: none;
+    display: inline-block;
+  }
+  .c-trailers__info {
+    float: none;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .c-trailers__price {
+    padding-left: 0;
+    text-align: center;
+  }
+  .c-trailers__description {
+    height: auto;
+  }
+  .c-services__item {
+    margin-bottom: 40px;
+  }
+  .content__section-sixth {
+    padding-bottom: 0;
+    padding-top: 80px;
   }
 }
 
@@ -228,6 +313,28 @@
   }
   .c-dealers__video iframe {
     height: 190px;
+  }
+  .content__section-fifth {
+    padding: 30px 0;
+  }
+  .c-trailers__photo {
+    height: 200px;
+  }
+  .c-photos__slider .owl-nav,
+  .c-trailers__slider .owl-nav {
+    right: 0;
+  }
+  .c-photos {
+    margin-top: 30px;
+  }
+  .c-services__item {
+    margin-bottom: 30px;
+  }
+  .content__section-sixth {
+    padding-top: 30px;
+  }
+  .c-services__item {
+    margin-top: 0;
   }
 }
 
@@ -261,6 +368,9 @@
     display: none;
   }
   .h-catalog-mob {
+    display: none;
+  }
+  .footer__f-buttons {
     display: none;
   }
   /**/

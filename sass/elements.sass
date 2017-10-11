@@ -290,6 +290,8 @@
 		padding-left: 65px
 	&-left
 		padding-right: 52px
+		position: relative
+		z-index: 2
 	&__list
 	&__item
 		padding-left: 26px
@@ -485,4 +487,275 @@
 		&:hover, &:focus, &:active
 			text-decoration: none
 			border-color: transparent
+			color: #495057
+
+.c-photos
+	padding-left: 65px
+	&__count
+		font-size: 24px
+		line-height: 48px
+		color: #868e96
+		font-family: "MyriadProBold", sans-serif
+		display: block
+		span
+			position: relative
+			padding-right: 15px
+			display: inline-block
+			color: #030303
+			&::after
+				content: '/'
+				position: absolute
+				display: block
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				-webkit-transform: translateY(-50%)
+				color: #030303
+	&__slider
+		.owl-nav
+			position: absolute
+			top: -120px
+			right: 25px
+			width: 90px
+			height: 22px
+		.owl-prev
+			width: 30px
+			height: 22px
+			text-indent: -9999px
+			display: block
+			background-image: url(../img/icons/slider-left.png)
+			background-repeat: no-repeat
+			background-position: left center
+			float: left
+			&:hover
+				background-position: right center
+		.owl-next
+			width: 30px
+			height: 22px
+			text-indent: -9999px
+			display: block
+			background-image: url(../img/icons/slider-right.png)
+			background-repeat: no-repeat
+			background-position: left center
+			float: right
+			&:hover
+				background-position: right center
+	&__item
+		text-align: center
+	&__img
+		display: inline-block
+		max-width: 100%
+		height: auto
+
+.c-services
+	&__item
+		padding-left: 90px
+		position: relative
+		margin-top: 10px
+	&__icon
+		width: 56px
+		height: 56px
+		border-radius: 50%
+		background-color: #333
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		background-repeat: no-repeat
+		background-position: right top
+	&__subtitle
+		font-size: 18px
+		line-height: 24px
+		color: #fff
+		display: block
+		font-family: "MyriadProBold", sans-serif
+		padding-bottom: 10px
+	&__description
+		display: block
+		line-height: 24px
+		color: #868e96
+	&__button
+		height: 80px
+		display: block
+		line-height: 80px
+		position: absolute
+		left: 0
+		right: 0
+		width: 100%
+		bottom: -80px
+		background-color: #ffea00
+		color: #495057
+		font-family: "MyriadProBold", sans-serif
+		text-align: center
+		padding: 0 15px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #495057
+
+.c-unique
+	&-left
+		padding-left: 65px
+		padding-right: 65px
+	&-right
+		padding-left: 65px
+	&__more
+		color: #329af0
+		line-height: 24px
+		font-family: "MyriadProBold", sans-serif
+		display: inline-block
+		margin-right: 33px
+		border-bottom: 1px solid #bbdefa
+		position: relative
+		&:hover, &:focus, &:active
+			border-color: transparent
+			text-decoration: none
+			color: #329af0
+		&::after
+			content: ''
+			width: 13px
+			height: 9px
+			display: block
+			position: absolute
+			right: -33px
+			top: 50%
+			margin-top: -4.5px
+			background-image: url(../img/icons/right-arrow-blue.png)
+			background-repeat: no-repeat
+			background-size: cover
+	&__scrollblock
+		padding-bottom: 21px
+		position: relative
+		&::after
+			content: ''
+			height: 1px
+			width: 79px
+			background-color: #030303
+			display: block
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+	&__subdescription
+		font-size: 14px
+		color: #495057
+		line-height: 24px
+		display: block
+		text-align: center
+		padding-top: 10px
+
+.c-contacts
+	&-left
+		background-color: #ffea00
+		width: 40%
+		float: left
+		padding: 40px 65px 90px 65px
+		margin-top: -113px
+	&-right
+		width: 60%
+		float: right
+		padding-top: 58px
+		padding-bottom: 100px
+		padding-left: 50px
+		padding-right: 65px
+	&__linetitle
+		padding-bottom: 26px
+		position: relative
+		&::after
+			content: ''
+			display: block
+			width: 117px
+			height: 1px
+			background-color: #030303
+			position: absolute
+			bottom: 0
+			left: -28px
+	&__blocks
+	&__block
+		padding-top: 30px
+		b
+			color: #030303
+			line-height: 30px
+			font-family: "MyriadProBold", sans-serif
+			display: block
+		p
+			color: #030303
+			line-height: 30px
+		a
+			color: #030303
+			line-height: 30px
+	&__row
+		@extend .clearfix
+		padding-top: 26px
+		.c-contacts__input
+			&:first-child
+				width: 220 * 100 / 600 + %
+				float: left
+			&:last-child
+				width: 315 * 100 / 600 + %
+				float: right
+	&__input
+		height: 45px
+		border-left: none
+		border-right: none
+		border-top: 1px solid transparent
+		border-bottom: 1px solid #565656
+		background-color: transparent
+		color: #fff
+		font-family: "MyriadProBold", sans-serif
+		width: 100%
+		display: block
+		margin-bottom: 30px
+		&::-webkit-input-placeholder
+			color: #fff
+			opacity: 1
+		&::-moz-placeholder
+			color: #fff
+			opacity: 1
+		&:-moz-placeholder
+			color: #fff
+			opacity: 1
+		&:-ms-input-placeholder
+			color: #fff
+			opacity: 1
+	&__button
+		background-color: #fff
+		-webkit-box-shadow: none
+		-moz-box-shadow: none
+		box-shadow: none
+		border-color: #fff
+		margin-top: 20px
+		width: 200px
+
+.f-buttons
+	&__item
+		height: 80px
+		line-height: 78px
+		border: 1px solid transparent
+		border-radius: 15px
+		font-family: "MyriadProBold", sans-serif
+		display: block
+		width: 100%
+		text-align: center
+	&__top
+		background-color: #329af0
+		border-color: #329af0
+		color: #fff
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #329af0
+			background-color: transparent
+	&__center
+		background-color: #ffea00
+		border-color: #ffea00
+		color: #030303
+		margin-top: 20px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #ffea00
+			background-color: transparent
+	&__bottom
+		color: #495057
+		&:hover, &:focus, &:active
+			text-decoration: none
 			color: #495057

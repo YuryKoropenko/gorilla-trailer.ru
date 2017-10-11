@@ -4,8 +4,43 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$('.f-buttons__bottom').on('click', function() {
+		$('html, body').animate({scrollTop:0}, 'slow');
+		return false;
+	});
+
+	$('.h-nav__link').on('click', function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			&& location.hostname == this.hostname) {
+				var $target = $(this.hash);
+				$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+				if ($target.length) {
+					var targetOffset = $target.offset().top;
+					$('html,body').animate({scrollTop: targetOffset}, 500);
+					return false;
+				}
+			}
+	});
+	$('.c-caption__anchor').on('click', function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			&& location.hostname == this.hostname) {
+				var $target = $(this.hash);
+				$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+				if ($target.length) {
+					var targetOffset = $target.offset().top;
+					$('html,body').animate({scrollTop: targetOffset}, 500);
+					return false;
+				}
+			}
+	});
+
 	/*sliders*/
 	$('.c-trailers__slider').owlCarousel({
+		items: 1,
+		nav: true,
+		loop: true
+	});
+	$('.c-photos__slider').owlCarousel({
 		items: 1,
 		nav: true,
 		loop: true
