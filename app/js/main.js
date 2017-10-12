@@ -34,6 +34,12 @@ $(document).ready(function() {
 			}
 	});
 
+	$('.callback__input-phone').mask("(999) 999-9999");
+	/*modal*/
+	$('.c-card__slide-link').fancybox();
+	$('.h-phone__callme').fancybox();
+	$('.h-mobphone').fancybox();
+
 	/*sliders*/
 	$('.c-trailers__slider').owlCarousel({
 		items: 1,
@@ -41,6 +47,11 @@ $(document).ready(function() {
 		loop: true
 	});
 	$('.c-photos__slider').owlCarousel({
+		items: 1,
+		nav: true,
+		loop: true
+	});
+	$('.c-card__slider').owlCarousel({
 		items: 1,
 		nav: true,
 		loop: true

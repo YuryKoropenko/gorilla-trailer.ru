@@ -121,14 +121,26 @@
   margin-left: -25px;
   margin-top: -25px;
   border-radius: 50%;
-  background: #030303 url("../../img/icons/res.png") no-repeat center center;
   cursor: move;
   opacity: 0;
+  background-color: #030303;
   -webkit-transform: translate3d(0, 0, 0) scale(0);
   -moz-transform: translate3d(0, 0, 0) scale(0);
   -ms-transform: translate3d(0, 0, 0) scale(0);
   -o-transform: translate3d(0, 0, 0) scale(0);
   transform: translate3d(0, 0, 0) scale(0);
+}
+.cd-handle svg {
+  fill: #ffea00;
+  width: 22px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  margin: 0 auto;
 }
 .cd-resize-img::after {
   content: '';
@@ -144,7 +156,7 @@
 }
 .cd-handle.draggable {
   /* change background color when element is active */
-  background-color: #445b7c;
+  background-color: #030303;
 }
 .is-visible .cd-handle {
   opacity: 1;

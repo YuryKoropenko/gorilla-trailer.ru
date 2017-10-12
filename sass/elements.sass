@@ -14,9 +14,13 @@
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
 	-moz-box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
 	box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
-	&:hover, &:focus, &:active
+	&:hover
 		text-decoration: none
-		background-color: transparent
+		background-color: #fff700
+		color: #495057
+	&:focus, &:active
+		text-decoration: none
+		background-color: #ffe100
 		color: #495057
 .h-logo
 	display: inline-block
@@ -26,11 +30,15 @@
 
 .h-catalog
 	line-height: 24px
-	color: #333
+	color: #030303
 	font-family: "MyriadProBold", sans-serif
-	&:hover, &:focus, &:active
-		text-decoration: underline
-		color: #333
+	&:hover
+		text-decoration: none
+		color: #495057
+	&:focus, &:active
+		text-decoration: none
+		color: #6b7580
+
 
 .h-phone
 	padding-left: 33px
@@ -39,13 +47,13 @@
 	&__icon
 		width: 18px
 		height: 18px
-		background-image: url(../img/icons/header-phone.png)
 		background-repeat: no-repeat
 		background-size: cover
 		display: block
 		position: absolute
 		left: 0
 		top: 4px
+		fill: #868e96
 	&__number
 		color: #030303
 		font-family: "MyriadProBold", sans-serif
@@ -54,7 +62,7 @@
 		color: #329af0
 		text-decoration: underline
 		&:hover, &:focus, &:active
-			text-decoration: none
+			text-decoration: underline
 			color: #329af0
 
 .h-letters
@@ -63,9 +71,20 @@
 	border-radius: 50%
 	background-color: #fff
 	display: block
-	background-image: url(../img/icons/header-letters.png)
 	background-repeat: no-repeat
 	background-position: center center
+	text-align: center
+	position: relative
+	&__icon
+		width: 22px
+		display: block
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+		right: 0
+		margin: 0 auto
+		fill: #868e96
 
 .h-mobphone
 	height: 63px
@@ -73,9 +92,18 @@
 	border-radius: 50%
 	background-color: #fff
 	display: block
-	background-image: url(../img/icons/header-mobphone.png)
-	background-repeat: no-repeat
-	background-position: center center
+	position: relative
+	&__icon
+		width: 32px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		left: 0
+		right: 0
+		margin: 0 auto
+		fill: #868e96
+
 
 .h-basket
 	width: 227px
@@ -89,18 +117,19 @@
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
 	-moz-box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
 	box-shadow: 0px 0px 20px 0px rgba(255,234,0,0.7)
-	&:hover, &:focus, &:active
+	&:hover
 		text-decoration: none
+		background-color: #fff700
+	&:focus, &:active
+		text-decoration: none
+		background-color: #ffe100
 	&__icon
-		background-image: url(../img/icons/header-basket.png)
-		background-repeat: no-repeat
-		background-size: cover
-		width: 25px
 		height: 31px
 		display: block
 		position: absolute
 		left: (86 - 25) / 2 + px
 		top: 50%
+		fill: #030303
 		margin-top: -15.5px
 	&__quantity
 		display: block
@@ -127,11 +156,13 @@
 	@extend .clearfix
 	&__mobbtn
 		float: left
-		width: 48px
-		height: 39px
-		background-image: url(../img/icons/bar.png)
 		background-repeat: no-repeat
 		background-size: cover
+	&__icon
+		height: 43px
+		width: 48px
+		display: block
+		fill: #030303
 	&__item
 		display: block
 		&-last
@@ -143,18 +174,36 @@
 				border: 1px solid #329af0
 				height: 37px
 				line-height: 35px
-				&:hover, &:focus, &:active
-					color: #329af0
+				position: relative
+				&::after
+					content: '!'
+					color: #fff
+					display: block
+					font-family: "MyriadProBold", sans-serif
+					position: absolute
+					left: 12px
+					top: -4px
+				&:hover
+					color: #fff
 					background-color: transparent
 					text-decoration: none
+					background-color: #008cff
+				&:focus, &:active
+					color: #fff
+					background-color: #0080ff
+
 	&__link
-		color: #333
+		color: #030303
 		line-height: 37px
 		font-family: "MyriadProBold", sans-serif
 		display: block
-		&:hover, &:focus, &:active
-			text-decoration: underline
-			color: #333
+		&:hover
+			text-decoration: none
+			color: #495057
+		&:focus, &:active
+			text-decoration: none
+			color: #6b7580
+
 
 .c-caption
 	&-left
@@ -193,8 +242,7 @@
 			background-size: cover
 		&:hover, &:focus, &:active
 			text-decoration: none
-			border-color: transparent
-			color: #495057
+			color: #030303
 	&__img
 		height: 100%
 		width: auto
@@ -416,8 +464,8 @@
 		border-bottom: 1px solid #acacac
 		margin: 8px 30px 8px 0
 		&:hover, &:focus, &:active
-			border-color: transparent
-			color: #333
+			text-decoration: none
+			color: #030303
 	&__mark
 		display: inline-block
 		color: #329af0
@@ -458,12 +506,18 @@
 		padding: 0 20px // временно
 	&__button
 		padding-left: 60px
-		background-image: url(../img/icons/basket.png)
-		background-repeat: no-repeat
-		background-position: 24px center
 		float: left
+		position: relative
+		svg
+			fill: #495057
+			display: block
+			height: 29px
+			position: absolute
+			left: 24px
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
 	&__info
-		float: right
 		margin: 12px 30px 12px 0
 		line-height: 30px
 		display: block
@@ -471,6 +525,10 @@
 		font-family: "MyriadProBold", sans-serif
 		border-bottom: 1px solid #c3c5c8
 		position: relative
+		&-wp
+			float: right
+		&-wpi
+			float: right
 		&::after
 			content: ''
 			background-image: url(../img/icons/right-arrow.png)
@@ -486,8 +544,7 @@
 			right: -30px
 		&:hover, &:focus, &:active
 			text-decoration: none
-			border-color: transparent
-			color: #495057
+			color: #030303
 
 .c-photos
 	padding-left: 65px
@@ -563,6 +620,14 @@
 		top: 0
 		background-repeat: no-repeat
 		background-position: right top
+		overflow: hidden
+		svg
+			fill: #329af0
+			display: block
+			width: 50px
+			position: absolute
+			right: -5px
+			top: 0
 	&__subtitle
 		font-size: 18px
 		line-height: 24px
@@ -607,9 +672,8 @@
 		border-bottom: 1px solid #bbdefa
 		position: relative
 		&:hover, &:focus, &:active
-			border-color: transparent
 			text-decoration: none
-			color: #329af0
+			color: #0080ff
 		&::after
 			content: ''
 			width: 13px
@@ -726,6 +790,16 @@
 		border-color: #fff
 		margin-top: 20px
 		width: 200px
+		&:hover
+			text-decoration: none
+			background-color: #fff700
+			border-color: #fff700
+			color: #495057
+		&:focus, &:active
+			text-decoration: none
+			background-color: #ffe100
+			border-color: #ffe100
+			color: #495057
 
 .f-buttons
 	&__item
@@ -741,21 +815,307 @@
 		background-color: #329af0
 		border-color: #329af0
 		color: #fff
-		&:hover, &:focus, &:active
+		&:hover
 			text-decoration: none
-			color: #329af0
-			background-color: transparent
+			color: #fff
+			background-color: #008cff
+		&:focus, &:active
+			text-decoration: none
+			color: #fff
+			background-color: #0080ff
 	&__center
 		background-color: #ffea00
 		border-color: #ffea00
-		color: #030303
-		margin-top: 20px
-		&:hover, &:focus, &:active
-			text-decoration: none
-			color: #ffea00
-			background-color: transparent
-	&__bottom
 		color: #495057
-		&:hover, &:focus, &:active
+		margin-top: 20px
+		&:hover
 			text-decoration: none
 			color: #495057
+			background-color: #fff700
+		&:focus, &:active
+			text-decoration: none
+			color: #495057
+			background-color: #ffe100
+	&__bottom
+		color: #495057
+		&:hover
+			text-decoration: none
+			color: #030303
+		&:focus, &:active
+			text-decoration: none
+			color: #030303
+
+.callback
+	width: 636px
+	display: none
+	&__wrapper
+		padding: 54px 65px
+	&__title
+	&__inputs
+		text-align: center
+		padding-top: 30px
+	&__input
+		color: #030303
+		text-align: left
+		&::-webkit-input-placeholder
+			color: #030303
+			opacity: 1
+		&::-moz-placeholder
+			color: #030303
+			opacity: 1
+		&:-moz-placeholder
+			color: #030303
+			opacity: 1
+		&:-ms-input-placeholder
+			color: #030303
+			opacity: 1
+	&__button
+		padding: 0 50px !important
+
+.c-title
+	&-left
+		text-align: left
+	&-right
+		text-align: right
+	&__title
+		line-height: 100px
+		display: block
+	&__button
+		display: inline-block
+		color: #030303
+		height: 100px
+		width: 285px
+		background-color: #fd0
+		position: relative
+		span
+			font-family: "MyriadProBold", sans-serif
+			position: absolute
+			display: block
+			top: 50%
+			line-height: 24px
+			transform: translateY(-50%)
+			left: 20px
+			right: 20px
+			text-align: center
+			-webkit-transform: translateY(-50%)
+			color: #030303
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #030303
+
+.c-name
+	&__title
+		line-height: 116px
+		color: #333
+		font-family: "MyriadProBold", sans-serif
+
+.c-card
+	&-left
+		padding-right: 45px
+		.c-trailers__description
+			height: auto
+			padding-right: 35px
+		.c-trailers__bottom
+			padding: 0
+			max-width: 380px
+		.c-trailers__price
+			font-size: 24px
+			padding-left: 24px
+			padding-top: 30px
+			padding-bottom: 30px
+		.c-trailers__info
+			margin-right: 0
+			border-bottom: 1px solid #495057
+			&::after
+				display: none
+	&-right
+		.c-trailers__subtitle
+			border-bottom: none
+	&__slider
+		padding-left: 65px
+		padding-right: 65px
+		.owl-nav
+			position: absolute
+			top: 50%
+			right: 0
+			left: 0
+			width: 100%
+			height: 22px
+			margin-top: -11px
+		.owl-prev
+			width: 30px
+			height: 22px
+			text-indent: -9999px
+			display: block
+			background-image: url(../img/icons/slider-left.png)
+			background-repeat: no-repeat
+			background-position: left center
+			float: left
+			&:hover
+				background-position: right center
+		.owl-next
+			width: 30px
+			height: 22px
+			text-indent: -9999px
+			display: block
+			background-image: url(../img/icons/slider-right.png)
+			background-repeat: no-repeat
+			background-position: left center
+			float: right
+			&:hover
+				background-position: right center
+		.owl-dots
+			position: absolute
+			height: 8px
+			left: 0
+			right: 0
+			text-align: center
+			bottom: 0
+			.owl-dot
+				width: 8px
+				height: 8px
+				background-color: #ffea00
+				border-radius: 50%
+				display: inline-block
+				margin: 0 7px
+			.active
+				background-color: #868e96
+
+	&__slide
+		width: 100%
+		display: -webkit-flex !important
+		display: -moz-flex !important
+		display: -ms-flex !important
+		display: -o-flex !important
+		display: flex !important
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+		height: 250px
+		&-link
+			display: block
+	&__img
+		max-height: 100%
+		max-width: 100%
+		display: block
+		width: auto !important
+		height: auto !important
+	&__list
+		padding-top: 7px
+	&__item
+		color: #495057
+		line-height: 30px
+		padding-bottom: 10px
+		padding-left: 40px
+		position: relative
+		&::before
+			content: ''
+			width: 16px
+			height: 1px
+			position: absolute
+			background-color: #329af0
+			left: 0
+			top: 16px
+			display: block
+		&::after
+			content: ''
+			width: 17px
+			height: 1px
+			position: absolute
+			background-color: #b3d4f8
+			left: 0
+			top: 17px
+			display: block
+
+.c-instructions
+	&-left
+		height: 119px
+		position: relative
+	&-right
+		height: 119px
+		position: relative
+	&__download
+		line-height: 24px
+		font-family: "MyriadProBold", sans-serif
+		color: #868e96
+		display: inline-block
+		border-bottom: 1px solid #d7dadc
+		margin-left: 70px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		margin-right: 33px
+		&::before
+			content: ''
+			width: 31px
+			height: 35px
+			display: block
+			background-image: url(../img/icons/pdf.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			position: absolute
+			left: -69px
+			top: 50%
+			margin-top: -17.5px
+		&::after
+			content: ''
+			width: 13px
+			height: 9px
+			display: block
+			background-image: url(../img/icons/right-arrow-gray.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			position: absolute
+			right: -33px
+			top: 9px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #030303
+	&__list
+		font-size: 0
+		display: block
+		position: absolute
+		top: 50%
+		right: 0
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+	&__item
+		display: inline-block
+		position: relative
+		&-active
+			&::after
+				background-image: url(../img/icons/right-arrow-blue.png)
+			.c-instructions__link
+				color: #329af0
+				&:hover, &:focus, &:active
+					color: #008cff
+	&__link
+		font-size: 16px
+		color: #868e96
+		line-height: 24px
+		border-bottom: 1px solid #d4d6d9
+		margin-right: 30px
+		margin-left: 40px
+		position: relative
+		display: inline-block
+		&::after
+			content: ''
+			width: 13px
+			height: 9px
+			display: block
+			background-image: url(../img/icons/right-arrow-gray.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			position: absolute
+			right: -30px
+			top: 9px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #030303
