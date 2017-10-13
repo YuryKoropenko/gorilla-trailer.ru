@@ -752,10 +752,12 @@ ol, ul {
   line-height: 24px;
   color: #868e96;
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 120px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 100px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
 }
 
 .c-trailers__photo {
@@ -1380,6 +1382,7 @@ ol, ul {
   width: 100%;
   height: 22px;
   margin-top: -11px;
+  z-index: -1;
 }
 
 .c-card__slider .owl-prev {
@@ -1611,6 +1614,35 @@ ol, ul {
   color: #030303;
 }
 
+.c-categories-left {
+  padding-right: 65px;
+}
+
+.c-categories-right {
+  padding-left: 65px;
+}
+
+.c-categories .c-trailers__bottom {
+  padding: 10px 0 0 0;
+}
+
+.c-categories__item {
+  position: relative;
+}
+
+.c-categories__arrow {
+  position: absolute;
+  width: 30px;
+  height: 22px;
+  background-image: url(../img/icons/slider-right.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  right: 0;
+  top: 15px;
+  display: block;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -1786,6 +1818,17 @@ body::after {
   height: 120px;
   border: 1px solid #e7e8ea;
   margin-bottom: 194px;
+}
+
+.content__section-categories {
+  padding-bottom: 65px;
+  padding-top: 65px;
+  border: 1px solid #e7e8ea;
+}
+
+.content__section-categories-last {
+  margin-bottom: 135px;
+  border-color: transparent;
 }
 
 .content__c-caption {
