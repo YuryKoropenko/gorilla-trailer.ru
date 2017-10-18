@@ -1,0 +1,409 @@
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Заголовок</title>
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Styles -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="libs/rudebox/style.css">
+	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- End_Styles -->
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-xs-6">
+					<div class="header__h-logo">
+						<a href="/" class="h-logo">
+							<img src="img/header-logo.png" alt="logo" class="h-logo__img">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+					<div class="header__h-catalog">
+						<a href="#" class="h-catalog">
+							Перейти в каталог
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+					<div class="header__h-phone">
+						<div class="h-phone">
+							<svg class="h-phone__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.731 29.731"><path d="M23.895 29.73c-1.237 0-2.73-.31-4.374-.93-3.6-1.357-7.52-4.04-11.034-7.555C4.97 17.73 2.286 13.81.928 10.208-.307 6.933-.31 4.245.92 3.015c.178-.177.358-.367.544-.563 1.123-1.18 2.392-2.51 4.074-2.45C6.698.05 7.82.77 8.97 2.202c3.398 4.225 1.866 5.73.093 7.477l-.313.31c-.29.29-.838 1.632 4.26 6.73 1.664 1.664 3.083 2.882 4.217 3.62.714.463 1.99 1.165 2.515.64l.315-.317c1.744-1.77 3.25-3.296 7.473.1 1.43 1.15 2.15 2.27 2.198 3.432.07 1.68-1.27 2.953-2.452 4.075-.195.186-.385.366-.562.542-.61.612-1.588.92-2.82.92zM5.418 1c-1.195 0-2.274 1.136-3.23 2.14-.19.203-.377.4-.56.582-.917.916-.824 3.323.236 6.134 1.31 3.472 3.913 7.266 7.33 10.683 3.416 3.414 7.208 6.017 10.68 7.326 2.812 1.062 5.22 1.152 6.134.237.183-.183.38-.37.58-.56 1.028-.976 2.193-2.082 2.142-3.31-.035-.842-.65-1.75-1.825-2.694-3.52-2.83-4.503-1.832-6.135-.177l-.32.323c-.78.78-2.047.608-3.767-.51-1.193-.776-2.667-2.038-4.38-3.75-4.23-4.23-5.583-6.82-4.26-8.147l.32-.316c1.66-1.632 2.66-2.617-.17-6.138C7.244 1.65 6.338 1.036 5.495 1h-.078z"/></svg>
+							<div class="h-phone__number">
+								+7 (495) 235-2-235
+							</div>
+							<a href="#callback" class="h-phone__callme">
+								Перезвоните мне
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-6">
+					<div class="header__h-basket">
+						<a href="#" class="h-basket">
+							<svg class="h-basket__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63"><path d="M49.56 63H26.315a1.5 1.5 0 0 1-1.464-1.17l-11.448-51A1.497 1.497 0 0 1 14.865 9h29.768a1.5 1.5 0 0 1 1.464 1.17l10.017 44.573a6.76 6.76 0 0 1-1.332 5.732A6.662 6.662 0 0 1 49.56 63zm-22.045-3H49.56c1.12 0 2.17-.51 2.88-1.4.728-.91 1-2.075.747-3.2L43.433 12H16.74l10.775 48z"/><path d="M36.512 63H13.437a6.687 6.687 0 0 1-5.032-2.3 6.796 6.796 0 0 1-1.625-5.382L12.85 10.3A1.5 1.5 0 0 1 14.338 9h30.175a1.5 1.5 0 0 1 0 3H15.65L9.75 55.72a3.806 3.806 0 0 0 .91 3.006A3.644 3.644 0 0 0 13.438 60h23.075a1.5 1.5 0 0 1 0 3z"/><path d="M36.44 11.5a1.5 1.5 0 0 1-1.5-1.5V6.99C34.94 4.863 32.763 3 30.77 3h-2.61c-1.978 0-3.223 1.827-3.223 3.99V10a1.5 1.5 0 0 1-3 0V6.99C21.94 3.2 24.557 0 28.16 0h2.61c3.653 0 7.167 3.2 7.167 6.99V10a1.5 1.5 0 0 1-1.5 1.5z"/></svg>
+							<span class="h-basket__quantity">
+								6 товаров
+							</span>
+							<span class="h-basket__price">
+								114 956
+							</span>
+						</a>
+					</div>
+					<div class="header__h-letters">
+						<a href="#" class="h-letters">
+							<svg class="h-letters__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 524.184 524.184"><path d="M483.606 75.31H40.542C18.34 75.31 0 93.65 0 115.852v292.48c0 22.2 18.34 40.542 40.542 40.542h443.064c22.2 0 40.542-18.34 40.542-40.542v-292.48c.965-22.202-17.376-40.542-40.542-40.542zm-151.55 197.883L500.982 142.88v261.59L332.058 273.194zM41.507 99.443h442.1c7.72 0 14.478 5.79 16.41 12.548L276.07 285.74c-8.688 6.758-23.167 6.758-30.89 0L24.133 113.92c1.93-7.72 8.688-14.478 17.375-14.478zM24.133 404.47V144.81l166.994 129.348L24.132 404.47zm17.375 22.202c-1.93 0-3.86 0-4.826-.965l174.717-136.105 19.306 15.444c8.688 6.757 19.306 9.653 29.924 9.653 10.618 0 22.2-2.897 29.924-9.654l21.237-16.41 176.646 137.07c-1.93.965-2.896.965-4.826.965h-442.1z"/></svg>
+						</a>
+					</div>
+					<div class="header__h-mobphone">
+						<a href="#callback" class="h-mobphone">
+							<svg class="h-mobphone__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.731 29.731"><path d="M23.895 29.73c-1.237 0-2.73-.31-4.374-.93-3.6-1.357-7.52-4.04-11.034-7.555C4.97 17.73 2.286 13.81.928 10.208-.307 6.933-.31 4.245.92 3.015c.178-.177.358-.367.544-.563 1.123-1.18 2.392-2.51 4.074-2.45C6.698.05 7.82.77 8.97 2.202c3.398 4.225 1.866 5.73.093 7.477l-.313.31c-.29.29-.838 1.632 4.26 6.73 1.664 1.664 3.083 2.882 4.217 3.62.714.463 1.99 1.165 2.515.64l.315-.317c1.744-1.77 3.25-3.296 7.473.1 1.43 1.15 2.15 2.27 2.198 3.432.07 1.68-1.27 2.953-2.452 4.075-.195.186-.385.366-.562.542-.61.612-1.588.92-2.82.92zM5.418 1c-1.195 0-2.274 1.136-3.23 2.14-.19.203-.377.4-.56.582-.917.916-.824 3.323.236 6.134 1.31 3.472 3.913 7.266 7.33 10.683 3.416 3.414 7.208 6.017 10.68 7.326 2.812 1.062 5.22 1.152 6.134.237.183-.183.38-.37.58-.56 1.028-.976 2.193-2.082 2.142-3.31-.035-.842-.65-1.75-1.825-2.694-3.52-2.83-4.503-1.832-6.135-.177l-.32.323c-.78.78-2.047.608-3.767-.51-1.193-.776-2.667-2.038-4.38-3.75-4.23-4.23-5.583-6.82-4.26-8.147l.32-.316c1.66-1.632 2.66-2.617-.17-6.138C7.244 1.65 6.338 1.036 5.495 1h-.078z"/></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="content__section content__section-title">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="content__c-title">
+							<div class="c-title c-title-left">
+								<h2 class="aboutGT__title c-title__title">
+									Каталог
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="content__c-title">
+							<div class="c-title c-title-right">
+								<a href="#" class="c-title__button">
+									<span>Отличие от конкурентов</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content__section content__section-name">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content__c-name">
+							<div class="c-name">
+								<b class="c-name__title">
+									Выберите товар
+								</b>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content__section content__section-categories">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="content__c-categories">
+							<div class="c-categories c-categories-left c-goods">
+								<div class="c-categories__item">
+									<a href="#" class="c-trailers__subtitle">
+										Gorilla 1500
+									</a>
+									<span class="c-trailers__mark">
+										Самый популярный прицеп
+									</span>
+									<p class="c-trailers__description">
+										Прицеп с огромной для своего размера и типа кузова грузоподъемностью! Также приятной мелочью будет высокий дорожный просвет и возможность опрокидывания кузова как назад, так и вбок. Прицеп укомплектован сцепной головкой AL-KO и замком кузова легендарной фирмы Knott!
+									</p>
+									<div class="c-trailers__photo">
+										<img src="img/tel-g.png" alt="" class="c-trailers__img">
+									</div>
+									<div class="c-trailers__price">
+										24 000
+									</div>
+									<div class="c-trailers__bottom">
+										<a href="#" class="btn c-trailers__button">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63"><path d="M49.56 63H26.315a1.5 1.5 0 0 1-1.464-1.17l-11.448-51A1.497 1.497 0 0 1 14.865 9h29.768a1.5 1.5 0 0 1 1.464 1.17l10.017 44.573a6.76 6.76 0 0 1-1.332 5.732A6.662 6.662 0 0 1 49.56 63zm-22.045-3H49.56c1.12 0 2.17-.51 2.88-1.4.728-.91 1-2.075.747-3.2L43.433 12H16.74l10.775 48z"/><path d="M36.512 63H13.437a6.687 6.687 0 0 1-5.032-2.3 6.796 6.796 0 0 1-1.625-5.382L12.85 10.3A1.5 1.5 0 0 1 14.338 9h30.175a1.5 1.5 0 0 1 0 3H15.65L9.75 55.72a3.806 3.806 0 0 0 .91 3.006A3.644 3.644 0 0 0 13.438 60h23.075a1.5 1.5 0 0 1 0 3z"/><path d="M36.44 11.5a1.5 1.5 0 0 1-1.5-1.5V6.99C34.94 4.863 32.763 3 30.77 3h-2.61c-1.978 0-3.223 1.827-3.223 3.99V10a1.5 1.5 0 0 1-3 0V6.99C21.94 3.2 24.557 0 28.16 0h2.61c3.653 0 7.167 3.2 7.167 6.99V10a1.5 1.5 0 0 1-1.5 1.5z"/></svg>
+											В корзину
+										</a>
+										<div class="c-trailers__info-wpi">
+											<a href="#" class="c-trailers__info">
+												Узнать характеристики
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="content__c-categories">
+							<div class="c-categories c-categories-right c-goods">
+								<div class="c-categories__item">
+									<a href="#" class="c-trailers__subtitle">
+										Gorilla 1500 (оцинкованный)
+									</a>
+									<p class="c-trailers__description">
+										Оцинкованная рама! Мы единственный в мире производитель, который делает прицепы такого класса с оцинкованной рамой. Прицеп с огромной для своего размера и типа кузова грузоподъемностью! Также приятной мелочью будет высокий дорожный просвет и возможность опрокидывания кузова как назад, так и вбок. Прицеп укомплектован сцепной головкой и замком кузова легендарной фирмы Knott и AL-KO!
+									</p>
+									<div class="c-trailers__photo">
+										<img src="img/prichep.jpg" alt="" class="c-trailers__img">
+									</div>
+									<div class="c-trailers__price">
+										25 500
+									</div>
+									<div class="c-trailers__bottom">
+										<a href="#" class="btn c-trailers__button">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63"><path d="M49.56 63H26.315a1.5 1.5 0 0 1-1.464-1.17l-11.448-51A1.497 1.497 0 0 1 14.865 9h29.768a1.5 1.5 0 0 1 1.464 1.17l10.017 44.573a6.76 6.76 0 0 1-1.332 5.732A6.662 6.662 0 0 1 49.56 63zm-22.045-3H49.56c1.12 0 2.17-.51 2.88-1.4.728-.91 1-2.075.747-3.2L43.433 12H16.74l10.775 48z"/><path d="M36.512 63H13.437a6.687 6.687 0 0 1-5.032-2.3 6.796 6.796 0 0 1-1.625-5.382L12.85 10.3A1.5 1.5 0 0 1 14.338 9h30.175a1.5 1.5 0 0 1 0 3H15.65L9.75 55.72a3.806 3.806 0 0 0 .91 3.006A3.644 3.644 0 0 0 13.438 60h23.075a1.5 1.5 0 0 1 0 3z"/><path d="M36.44 11.5a1.5 1.5 0 0 1-1.5-1.5V6.99C34.94 4.863 32.763 3 30.77 3h-2.61c-1.978 0-3.223 1.827-3.223 3.99V10a1.5 1.5 0 0 1-3 0V6.99C21.94 3.2 24.557 0 28.16 0h2.61c3.653 0 7.167 3.2 7.167 6.99V10a1.5 1.5 0 0 1-1.5 1.5z"/></svg>
+											В корзину
+										</a>
+										<div class="c-trailers__info-wpi">
+											<a href="#" class="c-trailers__info">
+												Узнать характеристики
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content__section content__section-categories content__section-categories-last">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="content__c-categories">
+							<div class="c-categories c-categories-left c-goods">
+								<div class="c-categories__item">
+									<a href="#" class="c-trailers__subtitle">
+										Gorilla 1500
+									</a>
+									<span class="c-trailers__mark">
+										Самый популярный прицеп
+									</span>
+									<p class="c-trailers__description">
+										Самый большой и мощный прицеп в линейке! Отличительной чертой является огромная грузоподъемность, высокий дорожный просвет и возможность опрокидывания кузова как назад, так и вбок. Прицеп укомплектован сцепной головкой и замком кузова легендарной фирмы AL-KO!
+									</p>
+									<div class="c-trailers__photo">
+										<img src="img/scoro.png" alt="" class="c-trailers__img">
+									</div>
+									<div class="c-trailers__price">
+										29 000
+									</div>
+									<div class="c-trailers__bottom">
+										<a href="#" class="btn c-trailers__button">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63"><path d="M49.56 63H26.315a1.5 1.5 0 0 1-1.464-1.17l-11.448-51A1.497 1.497 0 0 1 14.865 9h29.768a1.5 1.5 0 0 1 1.464 1.17l10.017 44.573a6.76 6.76 0 0 1-1.332 5.732A6.662 6.662 0 0 1 49.56 63zm-22.045-3H49.56c1.12 0 2.17-.51 2.88-1.4.728-.91 1-2.075.747-3.2L43.433 12H16.74l10.775 48z"/><path d="M36.512 63H13.437a6.687 6.687 0 0 1-5.032-2.3 6.796 6.796 0 0 1-1.625-5.382L12.85 10.3A1.5 1.5 0 0 1 14.338 9h30.175a1.5 1.5 0 0 1 0 3H15.65L9.75 55.72a3.806 3.806 0 0 0 .91 3.006A3.644 3.644 0 0 0 13.438 60h23.075a1.5 1.5 0 0 1 0 3z"/><path d="M36.44 11.5a1.5 1.5 0 0 1-1.5-1.5V6.99C34.94 4.863 32.763 3 30.77 3h-2.61c-1.978 0-3.223 1.827-3.223 3.99V10a1.5 1.5 0 0 1-3 0V6.99C21.94 3.2 24.557 0 28.16 0h2.61c3.653 0 7.167 3.2 7.167 6.99V10a1.5 1.5 0 0 1-1.5 1.5z"/></svg>
+											В корзину
+										</a>
+										<div class="c-trailers__info-wpi">
+											<a href="#" class="c-trailers__info">
+												Узнать характеристики
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="content__c-categories">
+							<div class="c-categories c-categories-right c-goods">
+								<div class="c-categories__item">
+									<a href="#" class="c-trailers__subtitle">
+										Gorilla Aqua
+									</a>
+									<p class="c-trailers__description">
+										У Вас лодка с транцевыми колесами и Вам надоело ее толкать на своей спине? У нас есть решение! Уникальный прицеп Gorilla Aqua поможет Вам довести собранную лодку с мотором от воды до лагеря без усилий с Вашей стороны! Больше не надо никого просить и мучить спину! Рыбалка должна приносить только удовольствие!
+									</p>
+									<div class="c-trailers__photo">
+										<img src="img/scoro.png" alt="" class="c-trailers__img">
+									</div>
+									<div class="c-trailers__price">
+										15 000
+									</div>
+									<div class="c-trailers__bottom">
+										<a href="#" class="btn c-trailers__button">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63"><path d="M49.56 63H26.315a1.5 1.5 0 0 1-1.464-1.17l-11.448-51A1.497 1.497 0 0 1 14.865 9h29.768a1.5 1.5 0 0 1 1.464 1.17l10.017 44.573a6.76 6.76 0 0 1-1.332 5.732A6.662 6.662 0 0 1 49.56 63zm-22.045-3H49.56c1.12 0 2.17-.51 2.88-1.4.728-.91 1-2.075.747-3.2L43.433 12H16.74l10.775 48z"/><path d="M36.512 63H13.437a6.687 6.687 0 0 1-5.032-2.3 6.796 6.796 0 0 1-1.625-5.382L12.85 10.3A1.5 1.5 0 0 1 14.338 9h30.175a1.5 1.5 0 0 1 0 3H15.65L9.75 55.72a3.806 3.806 0 0 0 .91 3.006A3.644 3.644 0 0 0 13.438 60h23.075a1.5 1.5 0 0 1 0 3z"/><path d="M36.44 11.5a1.5 1.5 0 0 1-1.5-1.5V6.99C34.94 4.863 32.763 3 30.77 3h-2.61c-1.978 0-3.223 1.827-3.223 3.99V10a1.5 1.5 0 0 1-3 0V6.99C21.94 3.2 24.557 0 28.16 0h2.61c3.653 0 7.167 3.2 7.167 6.99V10a1.5 1.5 0 0 1-1.5 1.5z"/></svg>
+											В корзину
+										</a>
+										<div class="c-trailers__info-wpi">
+											<a href="#" class="c-trailers__info">
+												Узнать характеристики
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content__section content__section-eighth">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content__c-contacts">
+							<div class="c-contacts c-contacts-left" name="section5">
+								<h2 class="aboutGT__title c-why__title c-contacts__linetitle">
+									Наши контакты
+								</h2>
+								<div class="c-contacts__blocks">
+									<div class="c-contacts__block">
+										<b>
+											Магазин-склад:
+										</b>
+										<p>
+											Московская обл., Ленинский р-н,<br> д.Ближние Прудищи, д. 1, корп. 1<br>Торговый центр «Формула X», 2 этаж
+										</p>
+									</div>
+									<div class="c-contacts__block">
+										<b>
+											Телефоны:
+										</b>
+										<p>
+											+7 (495) 235-2-235<br>+7 (926) 242-43-26
+										</p>
+									</div>
+									<div class="c-contacts__block">
+										<b>
+											Почта:
+										</b>
+										<a href="#">
+											info@gorilla-trailer.ru
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="c-contacts c-contacts-right">
+								<h2 class="aboutGT__title c-manufacture__title">
+									Пишите нам
+								</h2>
+								<div class="c-contacts__row">
+									<input type="text" class="c-contacts__input" placeholder="Имя">
+									<input type="text" class="c-contacts__input" placeholder="Электронный адрес">
+								</div>
+								<input type="text" class="c-contacts__input" placeholder="Телефон">
+								<input type="text" class="c-contacts__input" placeholder="Сообщение">
+								<input type="submit" class="btn c-contacts__button" value="Отправить">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content__section content__section-map">
+			<img src="img/map.jpg" alt="">
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="header__h-nav footer__h-nav">
+						<ul class="h-nav">
+							<li class="h-nav__item">
+								<a href="#section1" class="h-nav__link">
+									О Gorilla Trailer
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#section2" class="h-nav__link">
+									Почему мы лучшие
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#section3" class="h-nav__link">
+									Тест-Драйв
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#section3" class="h-nav__link">
+									Дилерам
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#section4" class="h-nav__link">
+									Прицепы
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#section4" class="h-nav__link">
+									Фото
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#section5" class="h-nav__link">
+									Контакты
+								</a>
+							</li>
+							<li class="h-nav__item h-nav__item-last">
+								<a href="#" class="h-nav__link">
+									Как отличить
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__f-buttons">
+						<div class="f-buttons">
+							<a href="#" class="f-buttons__item f-buttons__top">
+								Отличие от конкурентов
+							</a>
+							<a href="#" class="f-buttons__item f-buttons__center">
+								Перейти в каталог
+							</a>
+							<a href="#" class="f-buttons__item f-buttons__bottom">
+								Наверх
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="callback" id="callback">
+		<div class="callback__wrapper">
+			<b class="aboutGT__title c-why__title callback__title">
+				Оставьте заявку и мы<br>вам перезвоним!
+			</b>
+			<div class="callback__inputs">
+				<input type="text" class="c-contacts__input callback__input" placeholder="Имя">
+				<input type="text" class="c-contacts__input callback__input callback__input-phone" placeholder="Телефон">
+				<input type="submit" class="btn callback__button" value="Заказать звонок">
+			</div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/rudebox/jquery.mobile.custom.min.js"></script>
+	<script type="text/javascript" src="libs/rudebox/main.js"></script>
+	<script type="text/javascript" src="libs/rudebox/modernizr.js"></script>
+	<script type="text/javascript" src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="libs/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- End_Scripts -->
+</body>
+</html>

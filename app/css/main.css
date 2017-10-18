@@ -27,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .h-nav:after, .c-manufacture__item:after, .c-trailers__bottom:after, .c-contacts__row:after, .header__h-nav:after, .content__c-contacts:after {
+.clearfix:after, .h-nav:after, .c-manufacture__item:after, .c-trailers__bottom:after, .c-contacts__row:after, .c-basket__wp:after, .header__h-nav:after, .content__c-contacts:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .h-nav:before, .c-manufacture__item:before, .c-trailers__bottom:before, .c-contacts__row:before, .header__h-nav:before, .content__c-contacts:before {
+.clearfix:before, .h-nav:before, .c-manufacture__item:before, .c-trailers__bottom:before, .c-contacts__row:before, .c-basket__wp:before, .header__h-nav:before, .content__c-contacts:before {
   content: '';
   display: table;
 }
@@ -94,13 +94,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .h-nav:after, .c-manufacture__item:after, .c-trailers__bottom:after, .c-contacts__row:after, .header__h-nav:after, .content__c-contacts:after {
+.clearfix:after, .h-nav:after, .c-manufacture__item:after, .c-trailers__bottom:after, .c-contacts__row:after, .c-basket__wp:after, .header__h-nav:after, .content__c-contacts:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .h-nav:before, .c-manufacture__item:before, .c-trailers__bottom:before, .c-contacts__row:before, .header__h-nav:before, .content__c-contacts:before {
+.clearfix:before, .h-nav:before, .c-manufacture__item:before, .c-trailers__bottom:before, .c-contacts__row:before, .c-basket__wp:before, .header__h-nav:before, .content__c-contacts:before {
   content: '';
   display: table;
 }
@@ -1640,6 +1640,127 @@ ol, ul {
   background-size: cover;
   right: 0;
   top: 15px;
+  display: block;
+}
+
+.c-goods .c-trailers__price {
+  font-size: 24px;
+}
+
+.c-goods .c-trailers__price {
+  padding-left: 25px;
+}
+
+.c-basket__table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.c-basket__table .c-basket__item {
+  height: auto;
+}
+
+.c-basket__wp .minus {
+  color: #868e96;
+  font-size: 20px;
+  display: block;
+  float: left;
+  font-family: "MyriadProBold", sans-serif;
+  width: 30px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
+  border: none;
+}
+
+.c-basket__wp .minus:hover, .c-basket__wp .minus:focus, .c-basket__wp .minus:active {
+  text-decoration: none;
+  color: #329af0;
+}
+
+.c-basket__wp input {
+  display: block;
+  float: left;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  text-align: right;
+  height: 36px;
+  color: #030303;
+  font-family: "MyriadProBold", sans-serif;
+  line-height: 36px;
+}
+
+.c-basket__wp .plus {
+  color: #868e96;
+  font-size: 20px;
+  display: block;
+  float: left;
+  font-family: "MyriadProBold", sans-serif;
+  width: 30px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
+  border: none;
+}
+
+.c-basket__wp .plus:hover, .c-basket__wp .plus:focus, .c-basket__wp .plus:active {
+  text-decoration: none;
+  color: #329af0;
+}
+
+.c-basket__top .c-basket__item {
+  font-size: 14px;
+  color: #868e96;
+  font-family: "MyriadProBold", sans-serif;
+  height: 76px;
+  vertical-align: middle;
+}
+
+.c-basket__item {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.c-basket__item a {
+  line-height: 26px;
+  display: inline-block;
+  color: #030303;
+  font-family: "MyriadProBold", sans-serif;
+  border-bottom: 1px solid #acacac;
+}
+
+.c-basket__item a:hover, .c-basket__item a:focus, .c-basket__item a:active {
+  color: #030303;
+  text-decoration: none;
+}
+
+.c-basket__item .price {
+  color: #030303;
+  font-family: "MyriadProBold", sans-serif;
+  line-height: 36px;
+  display: inline-block;
+}
+
+.c-basket__item .close {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-image: url(../img/icons/close.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: none;
+}
+
+.c-basket__item-img {
+  width: 109px;
+}
+
+.c-basket__item-img img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 

@@ -292,6 +292,13 @@
   .c-categories .c-trailers__description {
     height: auto;
   }
+  .c-goods {
+    padding: 30px 0;
+  }
+  .content__section-categories {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -370,6 +377,9 @@
   .c-contacts__row .c-contacts__input:first-child {
     width: 100%;
     float: none;
+  }
+  .c-goods .c-trailers__price {
+    padding-left: 0;
   }
 }
 

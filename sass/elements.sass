@@ -1143,3 +1143,98 @@
 		right: 0
 		top: 15px
 		display: block
+
+.c-goods
+	.c-trailers__price
+		font-size: 24px
+	.c-trailers__price
+		padding-left: 25px
+
+.c-basket
+	&__table
+		width: 100%
+		table-layout: fixed
+		.c-basket__item
+			height: auto
+	&__wp
+		@extend .clearfix
+		.minus
+			color: #868e96
+			font-size: 20px
+			display: block
+			float: left
+			font-family: "MyriadProBold", sans-serif
+			width: 30px
+			height: 36px
+			line-height: 32px
+			text-align: center
+			border: none
+			&:hover, &:focus, &:active
+				text-decoration: none
+				color: #329af0
+		input
+			display: block
+			float: left
+			width: 50px
+			border: none
+			background-color: transparent
+			text-align: right
+			height: 36px
+			color: #030303
+			font-family: "MyriadProBold", sans-serif
+			line-height: 36px
+		.plus
+			color: #868e96
+			font-size: 20px
+			display: block
+			float: left
+			font-family: "MyriadProBold", sans-serif
+			width: 30px
+			height: 36px
+			line-height: 32px
+			text-align: center
+			border: none
+			&:hover, &:focus, &:active
+				text-decoration: none
+				color: #329af0
+	&__top
+		.c-basket__item
+			font-size: 14px
+			color: #868e96
+			font-family: "MyriadProBold", sans-serif
+			height: 76px
+			vertical-align: middle
+	&__item
+		display: inline-block
+		width: 100%
+		vertical-align: middle
+		a
+			line-height: 26px
+			display: inline-block
+			color: #030303
+			font-family: "MyriadProBold", sans-serif
+			border-bottom: 1px solid #acacac
+			&:hover, &:focus, &:active
+				color: #030303
+				text-decoration: none
+		.price
+			color: #030303
+			font-family: "MyriadProBold", sans-serif
+			line-height: 36px
+			display: inline-block
+		.close
+			width: 10px
+			height: 10px
+			display: inline-block
+			background-image: url(../img/icons/close.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			border: none
+
+		&-img
+			width: 109px
+			img
+				width: 100%
+				height: auto
+				display: block
