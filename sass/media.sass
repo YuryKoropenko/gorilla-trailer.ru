@@ -52,6 +52,8 @@
 		padding-right: 0
 	.c-categories-right
 		padding-left: 0
+	.c-caption-right
+		padding-left: 0
 
 
 
@@ -67,7 +69,9 @@
 	.header__h-letters,
 	.h-basket__quantity,
 	.h-basket__price
-		display: none
+		display: none !important
+	body .h-nav__item-mob .header__h-letters
+		display: block !important
 	.header__h-logo
 		padding-top: 17px
 	.h-basket
@@ -94,8 +98,8 @@
 		top: 100%
 		display: none
 		&__item
-			text-align: center
-			padding: 4px 0
+			text-align: left
+			padding: 16px 15px
 		&__link
 			display: inline-block
 	.h-catalog
@@ -226,6 +230,23 @@
 	.content__section-categories
 		padding-top: 0
 		padding-bottom: 0
+	.c-basket__img
+		width: 95%
+	.header__h-phone
+		display: inline-block
+		float: left
+	.header__h-letters
+		display: inline-block
+		float: left
+	.c-defference__arrow
+		display: none
+	.c-categories-poddelka-b
+		display: none
+	.c-purchase__textarea
+		background-color: #fafafa
+	.c-caption-right
+		margin-bottom: 0
+
 
 
 
@@ -373,6 +394,23 @@
 	.c-categories .c-trailers__mark
 		display: block
 		width: 100%
+	.c-basket__row .c-basket__item
+		height: 100px
+	.c-oformit__text-r
+		display: block
+	.content__section-defference
+		padding-top: 30px
+		padding-bottom: 30px
+	.c-defference__photo
+		margin-top: 30px
+		margin-bottom: 30px
+	.c-categories-original,
+	.c-categories-poddelka
+		cursor: pointer
+	.content__section-purchase
+		padding-top: 30px
+	.c-purchase-right
+		padding-top: 30px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -407,6 +445,8 @@
 	.footer__f-buttons
 		display: none
 	.content__section-mob
+		display: none
+	.h-nav__item-mob
 		display: none
 	/**/
 

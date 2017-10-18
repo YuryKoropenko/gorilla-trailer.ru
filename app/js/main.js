@@ -34,6 +34,21 @@ $(document).ready(function() {
 			}
 	});
 
+	if ($(window).width() < 991) {
+		$('.c-categories-original').on('click', function() {
+			$('.c-name').removeClass('c-categories__active');
+			$(this).addClass('c-categories__active');
+			$('.c-categories-poddelka-b').hide();
+			$('.c-categories-original-b').show();
+		});
+		$('.c-categories-poddelka').on('click', function() {
+			$('.c-name').removeClass('c-categories__active');
+			$(this).addClass('c-categories__active');
+			$('.c-categories-original-b').hide();
+			$('.c-categories-poddelka-b').show();
+		});
+	}
+
 	$('.callback__input-phone').mask("(999) 999-9999");
 	/*modal*/
 	$('.c-card__slide-link').fancybox();
