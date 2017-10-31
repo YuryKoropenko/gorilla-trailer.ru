@@ -54,6 +54,7 @@ $(document).ready(function() {
 	$('.c-card__slide-link').fancybox();
 	$('.h-phone__callme').fancybox();
 	$('.h-mobphone').fancybox();
+	$('.c-trailers__info').fancybox();
 
 	/*sliders*/
 	$('.c-trailers__slider').owlCarousel({
