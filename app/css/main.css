@@ -1356,11 +1356,10 @@ ol, ul {
 
 .c-card__slider .owl-dots {
   position: absolute;
-  height: 8px;
   left: 0;
   right: 0;
   text-align: center;
-  bottom: 0;
+  bottom: -20px;
 }
 
 .c-card__slider .owl-dots .owl-dot {
