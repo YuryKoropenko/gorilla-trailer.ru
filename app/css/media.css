@@ -328,6 +328,9 @@
   .c-caption-right {
     margin-bottom: 0;
   }
+  .card-img {
+    width: 95%;
+  }
 }
 
 /* Small Devices, Tablets */

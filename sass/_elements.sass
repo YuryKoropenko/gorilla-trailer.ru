@@ -1002,6 +1002,7 @@
 		height: 250px
 		&-link
 			display: block
+			outline: none
 	&__img
 		max-height: 100%
 		max-width: 100%
@@ -1384,3 +1385,69 @@
 		padding: 6px
 		margin-bottom: 30px
 		resize: none
+
+.card-img
+	padding: 0
+	display: block
+	width: 844px
+	background-color: #fff !important
+	z-index: 1
+	&__wrapper
+		padding: 0
+	&__slider
+	&__item
+		text-align: center
+	&__img
+		width: auto !important
+		height: auto !important
+		display: inline-block !important
+		max-width: 100%
+	.owl-nav
+		position: absolute
+		top: 50%
+		right: 22px
+		left: 22px
+		width: auto
+		height: 22px
+		margin-top: -11px
+		z-index: 1
+	.owl-prev
+		width: 30px
+		height: 22px
+		text-indent: -9999px
+		display: block
+		background-image: url(../img/icons/slider-left.png)
+		background-repeat: no-repeat
+		background-position: left center
+		float: left
+		z-index: 10
+		position: relative
+		&:hover
+			background-position: right center
+	.owl-next
+		width: 30px
+		height: 22px
+		text-indent: -9999px
+		display: block
+		background-image: url(../img/icons/slider-right.png)
+		background-repeat: no-repeat
+		background-position: left center
+		float: right
+		z-index: 10
+		position: relative
+		&:hover
+			background-position: right center
+	.owl-dots
+		display: none
+		.owl-dot
+			width: 8px
+			height: 8px
+			background-color: #ffea00
+			border-radius: 50%
+			display: inline-block
+			margin: 0 7px
+		.active
+			background-color: #868e96
+	.fancybox-close-small
+		top: 20px
+		right: 20px

@@ -57,6 +57,12 @@ $(document).ready(function() {
 	$('.c-trailers__info').fancybox();
 
 	/*sliders*/
+	$('.card-img__slider').owlCarousel({
+		items: 1,
+		nav: true,
+		loop: true,
+		autoHeight:true
+	});
 	$('.c-trailers__slider').owlCarousel({
 		items: 1,
 		nav: true,
