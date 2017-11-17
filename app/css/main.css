@@ -399,11 +399,21 @@ ol, ul {
 }
 
 .aboutGT__title {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 48px;
   color: #333;
   font-family: "MyriadProBold", sans-serif;
+  height: 100px;
   display: block;
+}
+
+.aboutGT__title span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  display: block;
+  line-height: 33px;
 }
 
 .aboutGT__description {

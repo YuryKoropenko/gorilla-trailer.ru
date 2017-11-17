@@ -413,6 +413,12 @@
   .c-goods .c-trailers__price {
     padding-left: 0;
   }
+  .aboutGT__title {
+    font-size: 20px;
+  }
+  .aboutGT__title span {
+    line-height: 25px;
+  }
 }
 
 /* Extra Small Devices, Phones */
