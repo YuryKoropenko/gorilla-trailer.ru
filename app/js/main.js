@@ -9,31 +9,6 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$('.h-nav__link').on('click', function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-			&& location.hostname == this.hostname) {
-				var $target = $(this.hash);
-				$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-				if ($target.length) {
-					var targetOffset = $target.offset().top;
-					$('html,body').animate({scrollTop: targetOffset}, 500);
-					return false;
-				}
-			}
-	});
-	$('.c-caption__anchor').on('click', function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-			&& location.hostname == this.hostname) {
-				var $target = $(this.hash);
-				$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-				if ($target.length) {
-					var targetOffset = $target.offset().top;
-					$('html,body').animate({scrollTop: targetOffset}, 500);
-					return false;
-				}
-			}
-	});
-
 	if ($(window).width() < 991) {
 		$('.c-categories-original').on('click', function() {
 			$('.c-name').removeClass('c-categories__active');
