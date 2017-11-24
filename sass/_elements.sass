@@ -1380,16 +1380,55 @@
 			opacity: 1
 	&-right
 		padding-top: 42px
-	&__textarea
-		height: 92px
+	&__subtitle
 		display: block
-		width: 100%
+		color: #329af0
+		font-size: 12px
+		line-height: 24px
+		font-family: "MyriadProSemiBold", sans-serif
+		padding-bottom: 5px
+	&__block
 		background-color: #fff
-		border: none
-		border-radius: 8px
-		padding: 6px
-		margin-bottom: 30px
-		resize: none
+		padding: 18px 30px
+		margin-bottom: 28px
+	&__radio
+		input[type="radio"]
+			display: none
+			&:checked + label:after
+				display: block !important
+		label
+			cursor: pointer
+			display: inline-block
+			position: relative
+			color: #030303
+			font-family: "MyriadProSemiBold", sans-serif
+			padding: 10px 0 10px 50px
+			-moz-user-select: none
+			-khtml-user-select: none
+			user-select: none
+			&::before
+				content: ''
+				width: 28px
+				height: 28px
+				border: 1px solid #acacac
+				border-radius: 50%
+				position: absolute
+				display: block
+				left: 0
+				top: 50%
+				margin-top: -14px
+			&::after
+				content: ''
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				background-color: #329af0
+				position: absolute
+				left: 4px
+				top: 50%
+				margin-top: -10px
+				display: none
+
 
 .card-img
 	padding: 0
