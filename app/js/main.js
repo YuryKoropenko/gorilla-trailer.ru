@@ -53,4 +53,6 @@ $(document).ready(function() {
 		nav: true,
 		loop: true
 	});
+
+	$('.scrollblock').twentytwenty();
 });

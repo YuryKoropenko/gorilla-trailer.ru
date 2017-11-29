@@ -2263,3 +2263,36 @@ body::after {
 .footer__f-buttons {
   padding: 40px 0;
 }
+
+/*default*/
+.twentytwenty-before-label::before,
+.twentytwenty-after-label::before {
+  display: none !important;
+}
+
+.twentytwenty-handle {
+  background-position: center center;
+  background-image: url(../img/svg/resize.min.svg);
+  background-size: 22px auto;
+  background-repeat: no-repeat;
+  background-color: #030303;
+  border-color: #030303;
+}
+
+.twentytwenty-handle span {
+  display: none;
+  border-radius: 0;
+}
+
+.twentytwenty-horizontal .twentytwenty-handle::before, .twentytwenty-horizontal .twentytwenty-handle::after, .twentytwenty-vertical .twentytwenty-handle::before, .twentytwenty-vertical .twentytwenty-handle::after {
+  background-color: #030303;
+  border-color: #030303;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.twentytwenty-overlay {
+  display: none;
+}
