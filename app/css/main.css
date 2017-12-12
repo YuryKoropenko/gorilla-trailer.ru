@@ -1854,6 +1854,11 @@ ol, ul {
   z-index: 5;
 }
 
+.c-defference__popup-button {
+  display: block;
+  outline: none;
+}
+
 .c-categories__active .c-name__title {
   color: #329af0;
 }

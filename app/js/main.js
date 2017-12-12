@@ -30,6 +30,7 @@ $(document).ready(function() {
 	$('.h-phone__callme').fancybox();
 	$('.h-mobphone').fancybox();
 	$('.c-trailers__info').fancybox();
+	$('.c-defference__popup-button').fancybox();
 
 	/*sliders*/
 	$('.card-img__slider').owlCarousel({
